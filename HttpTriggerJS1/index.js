@@ -1,3 +1,14 @@
+require('appdynamics').profile({
+    controllerHostName: 'https://baseball2018060813032310.saas.appdynamics.com',
+    controllerPort: 443,
+    controllerSslEnabled: true,  // Set to true if controllerPort is SSL
+    accountName: 'baseball2018060813032310',
+    accountAccessKey: 'ykcrqnioj76i',
+    applicationName: 'node-js-sample',
+    libagent:true,
+    tierName: 'LPtier',
+    nodeName: 'process'
+   });
 module.exports = function (context, req) {
     context.log('JavaScript HTTP trigger function processed a request.');
 
